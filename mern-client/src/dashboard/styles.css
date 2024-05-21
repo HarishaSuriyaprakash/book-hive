@@ -1,0 +1,4 @@
+.table-on-top {
+    position: relative;
+    z-index: 20;
+  }
