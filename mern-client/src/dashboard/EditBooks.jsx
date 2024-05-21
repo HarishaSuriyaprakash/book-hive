@@ -30,7 +30,7 @@ const EditBooks = () => {
 
     const updatebookObj = { bookTitle, authorName, imageURL, category, bookDescription, bookPDFURL };
 
-    fetch(`http://localhost:5000/book/${id}`,
+    fetch(`https://book-hive-uv3v.vercel.app/book/${id}`,
         {
             method:"PATCH",
             headers:{

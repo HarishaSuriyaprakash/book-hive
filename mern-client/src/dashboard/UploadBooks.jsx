@@ -39,7 +39,7 @@ const UploadBooks = () => {
     }
     console.log(bookObj);
    
-    fetch("http://localhost:5000/upload-book",
+    fetch("https://book-hive-uv3v.vercel.app/upload-book",
     {method:"POST",
     headers:{
         "Content-Type": "application/json",

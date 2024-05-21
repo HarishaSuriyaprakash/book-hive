@@ -7,13 +7,13 @@ const ManageBooks = () => {
   const [allBooks, setAllBooks] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/all-books")
+    fetch("https://book-hive-uv3v.vercel.app/all-books")
       .then(res => res.json())
       .then(data => setAllBooks(data));
   }, []);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/${id}`, {
+    fetch(`https://book-hive-uv3v.vercel.app/${id}`, {
       method: 'DELETE',
     })
     .then(res => res.json())

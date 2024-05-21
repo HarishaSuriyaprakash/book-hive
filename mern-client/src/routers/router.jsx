@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter} from "react-router-dom";
 import App from "../App";
 import Home from "../home/Home";
 import Shop from "../shop/Shop";
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
       {
         path: "book/:id",
         element: <SingleBook />,
-        loader: ({ params }) => fetch(`http://localhost:5000/book/${params.id}`)
+        loader: ({ params }) => fetch(`https://book-hive-uv3v.vercel.app/book/${params.id}`)
       }
     ]
   },
@@ -63,7 +63,7 @@ const router = createBrowserRouter([
       {
         path:"/admin/dashboard/edit-books/:id",
         element:<EditBooks/>,
-        loader:({params})=>fetch(`http://localhost:5000/book/${params.id}`)
+        loader:({params})=>fetch(`https://book-hive-uv3v.vercel.app/book/${params.id}`)
       }
 
     ]
